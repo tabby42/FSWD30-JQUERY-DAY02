@@ -6,12 +6,15 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  /* -webkit-box-pack: justify;*/
+  /*     -ms-flex-pack: justify;*/
+  /*         justify-content: space-between;*/ }
 
 .flex-1 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 10%;
-  flex: 1 0 10%; }
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px; }
 
 .flex-wrap {
   -ms-flex-wrap: wrap;
@@ -26,31 +29,42 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .draggable-container {
-  height: 300px;
+  min-height: 170px;
   padding: 10px; }
 
 .droppable-container {
   background-color: #999999;
-  height: 300px;
+  min-height: 170px;
   padding: 10px; }
 
 .card {
   background-color: #ccc;
-  margin: 10px; }
+  margin: 10px;
+  width: 100px;
+  height: 130px;
+  border-radius: 10px; }
   .card.droppable {
     background-color: #fff;
-    color: #fff; }
+    color: transparent; }
   .card.ui-state-highlight {
-    background-color: yellow;
-    color: yellow; }
+    background-color: #FFD600;
+    color: #fff;
+    z-index: 999;
+    position: relative; }
   .card.draggable {
     cursor: -webkit-grab;
     cursor: grab;
     text-align: center;
-    font-size: 7em;
-    padding-top: 8%; }
+    font-size: 2em;
+    vertical-align: middle; }
     .card.draggable.dropped-color {
-      background-color: green;
       color: #fff; }
+  .card.flex-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
