@@ -23,7 +23,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .draggable-container {
   height: 300px;
@@ -38,11 +38,19 @@ body {
   background-color: #ccc;
   margin: 10px; }
   .card.droppable {
-    background-color: #fff; }
+    background-color: #fff;
+    color: #fff; }
   .card.ui-state-highlight {
-    background-color: yellow; }
+    background-color: yellow;
+    color: yellow; }
   .card.draggable {
     cursor: -webkit-grab;
-    cursor: grab; }
+    cursor: grab;
+    text-align: center;
+    font-size: 7em;
+    padding-top: 8%; }
+    .card.draggable.dropped-color {
+      background-color: green;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

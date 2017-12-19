@@ -1,4 +1,5 @@
 $gray: #ccc;
+$fontFam: 'Montserrat', sans-serif;
 
 /*flexbox rules*/
 .flex-row {
@@ -29,7 +30,7 @@ $gray: #ccc;
 }
 
 body {
-	font-family: sans-serif;
+	font-family: $fontFam;
 }
 
 .draggable-container {
@@ -48,12 +49,24 @@ body {
 	margin: 10px;
 	&.droppable {
 		background-color: #fff;
+		color: #fff;
 	}
 	&.ui-state-highlight {
 		background-color: yellow;
+		color: yellow;
 	}
 	&.draggable {
 		cursor: -webkit-grab;
 		cursor: grab;
+	    text-align: center;
+    	font-size: 7em;
+	    padding-top: 8%;
+	    &.dropped-color {
+	    	background-color: green;
+	    	color: #fff;
+	    }
 	}
 }
+
+
+
