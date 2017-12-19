@@ -1,0 +1,48 @@
+/*flexbox rules*/
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 10%;
+  flex: 1 0 10%; }
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/*layout elements*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif; }
+
+.draggable-container {
+  height: 300px;
+  padding: 10px; }
+
+.droppable-container {
+  background-color: #999999;
+  height: 300px;
+  padding: 10px; }
+
+.card {
+  background-color: #ccc;
+  margin: 10px; }
+  .card.droppable {
+    background-color: #fff; }
+  .card.ui-state-highlight {
+    background-color: yellow; }
+  .card.draggable {
+    cursor: -webkit-grab;
+    cursor: grab; }
+
+/*# sourceMappingURL=style.css.map */
